@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         val db = Firebase.firestore
 
-        // Create a new user with a first and last name
+        /*// Create a new user with a first and last name
         val user = hashMapOf(
             "first" to "Ada",
             "last" to "Lovelace",
@@ -54,7 +54,19 @@ class MainActivity : AppCompatActivity() {
             }
             .addOnFailureListener { e ->
                 Log.w(TAG, "Error adding document", e)
+            }*/
+
+        db.collection("users")
+            .get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    Log.d(TAG, "${document.id} => ${document.data}")
+                }
             }
+            .addOnFailureListener { exception ->
+                Log.w(TAG, "Error getting documents.", exception)
+            }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

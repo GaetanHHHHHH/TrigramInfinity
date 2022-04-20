@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrigramInfinity.iml" filepath="$PROJECT_DIR$/.idea/modules/TrigramInfinity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TEST.iml" filepath="$PROJECT_DIR$/.idea/modules/TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TEST.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TEST.app.iml" />
     </modules>
   </component>
 </project>
